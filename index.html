@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>My Assignments | Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="background-glow glow-one"></div>
+    <div class="background-glow glow-two"></div>
+
+    <header class="navbar">
+      <a href="#" class="logo">
+        <span class="logo-icon">A</span>
+        <span>Assignment<span class="logo-highlight">Hub</span></span>
+      </a>
+
+      <div class="nav-right">
+        <span class="status-dot"></span>
+        <span class="nav-label">My Learning Portfolio</span>
+      </div>
+    </header>
+
+    <main class="main-container">
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero-content">
+          <div class="eyebrow">
+            <span class="eyebrow-line"></span>
+            MY ACADEMIC WORK
+          </div>
+
+          <h1>Learning by <span class="gradient-text">Building.</span></h1>
+
+          <p class="hero-description">
+            A collection of practical assignments, experiments, and projects
+            built while exploring web development.
+          </p>
+
+          <div class="hero-stats">
+            <div class="stat">
+              <h3 id="totalCount">06</h3>
+              <p>Total Assignments</p>
+            </div>
+
+            <div class="stat-divider"></div>
+
+            <div class="stat">
+              <h3>02</h3>
+              <p>Technologies</p>
+            </div>
+
+            <div class="stat-divider"></div>
+
+            <div class="stat">
+              <h3>100%</h3>
+              <p>Hands-on Learning</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="visual-orbit orbit-one"></div>
+          <div class="visual-orbit orbit-two"></div>
+
+          <div class="code-window">
+            <div class="window-header">
+              <div class="window-dots">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <span>learning.js</span>
+            </div>
+
+            <div class="code-content">
+              <p><span class="code-purple">const</span> journey = {</p>
+              <p class="indent">
+                <span class="code-blue">learn</span>:
+                <span class="code-green">"Build"</span>,
+              </p>
+              <p class="indent">
+                <span class="code-blue">practice</span>:
+                <span class="code-green">true</span>,
+              </p>
+              <p class="indent">
+                <span class="code-blue">improve</span>:
+                <span class="code-green">"Daily"</span>
+              </p>
+              <p>};</p>
+              <br />
+              <p>
+                <span class="code-purple">return</span>
+                <span class="code-green"> success;</span>
+              </p>
+              <span class="cursor"></span>
+            </div>
+          </div>
+
+          <div class="floating-badge badge-top">
+            <span>✦</span> Keep Building
+          </div>
+
+          <div class="floating-badge badge-bottom">
+            <span class="badge-check">✓</span> Progress in Motion
+          </div>
+        </div>
+      </section>
+
+      <!-- Assignments Section -->
+      <section class="assignments-section">
+        <div class="section-heading">
+          <div>
+            <span class="section-label">THE COLLECTION</span>
+            <h2>My Assignments<span class="heading-period">.</span></h2>
+            <p>Explore the work I've created so far.</p>
+          </div>
+
+          <div class="assignment-counter">
+            <span id="visibleCount">06</span> Projects
+          </div>
+        </div>
+
+        <!-- Search and filters -->
+        <div class="toolbar">
+          <div class="search-wrapper">
+            <span class="search-icon">⌕</span>
+            <input
+              type="text"
+              id="searchInput"
+              placeholder="Search assignments..."
+            />
+            <span class="search-shortcut">⌘ K</span>
+          </div>
+
+          <div class="filter-group">
+            <button class="filter-btn active" data-category="all">
+              All Work
+            </button>
+
+            <button class="filter-btn" data-category="HTML/CSS/JS">
+              <span class="filter-dot js-dot"></span>
+              HTML / CSS / JS
+            </button>
+
+            <button class="filter-btn" data-category="React">
+              <span class="filter-dot react-dot"></span>
+              React
+            </button>
+          </div>
+        </div>
+
+        <!-- Cards -->
+        <div class="assignment-grid" id="assignmentGrid">
+          <!-- 01 Calculator -->
+          <a
+            href="Assignment 1/index.html"
+            class="assignment-card"
+            data-category="HTML/CSS/JS"
+          >
+            <div class="card-visual visual-orange">
+              <span class="card-number">01 / 06</span>
+
+              <div class="calculator-art">
+                <div class="calc-screen">128 + 64</div>
+                <div class="calc-buttons">
+                  <span>7</span><span>8</span><span>9</span
+                  ><span class="calc-op">÷</span> <span>4</span><span>5</span
+                  ><span>6</span><span class="calc-op">×</span> <span>1</span
+                  ><span>2</span><span>3</span><span class="calc-op">−</span>
+                  <span>0</span><span>.</span><span class="calc-equal">=</span
+                  ><span class="calc-op">+</span>
+                </div>
+              </div>
+
+              <span class="visual-decoration">✳</span>
+            </div>
+
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="tech-tag">HTML / CSS / JS</span>
+                <span class="card-arrow">↗</span>
+              </div>
+
+              <h3>JavaScript Calculator</h3>
+
+              <p>
+                Perform basic arithmetic operations using JavaScript functions
+                and conditional statements.
+              </p>
+
+              <div class="card-footer">
+                <span>Functions · Switch</span>
+                <span class="view-link">Explore Project →</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- 02 To-do -->
+          <a
+            href="Assignment 2/index.html"
+            class="assignment-card"
+            data-category="HTML/CSS/JS"
+          >
+            <div class="card-visual visual-green">
+              <span class="card-number">02 / 06</span>
+
+              <div class="todo-art">
+                <div class="todo-heading">My Tasks <span>•••</span></div>
+                <div class="todo-row completed-row">
+                  <span class="fake-check">✓</span>
+                  <span>Learn JavaScript</span>
+                </div>
+                <div class="todo-row">
+                  <span class="fake-check"></span>
+                  <span>Build To-Do App</span>
+                </div>
+                <div class="todo-row">
+                  <span class="fake-check"></span>
+                  <span>Practice DOM</span>
+                </div>
+                <div class="todo-add">+ Add new task</div>
+              </div>
+
+              <span class="visual-decoration">✓</span>
+            </div>
+
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="tech-tag">HTML / CSS / JS</span>
+                <span class="card-arrow">↗</span>
+              </div>
+
+              <h3>Interactive To-Do List</h3>
+
+              <p>
+                Manage tasks dynamically with add, complete, and delete
+                functionality using DOM methods.
+              </p>
+
+              <div class="card-footer">
+                <span>DOM · Events</span>
+                <span class="view-link">Explore Project →</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- 03 Registration -->
+          <a
+            href="Assignment 3/index.html"
+            class="assignment-card"
+            data-category="HTML/CSS/JS"
+          >
+            <div class="card-visual visual-blue">
+              <span class="card-number">03 / 06</span>
+
+              <div class="form-art">
+                <div class="form-avatar">👤</div>
+                <div class="form-title">Create Account</div>
+                <div class="fake-input">Full Name</div>
+                <div class="fake-input">Email Address</div>
+                <div class="fake-input">Password <span>••••••</span></div>
+                <div class="fake-submit">Register Now →</div>
+              </div>
+
+              <span class="visual-decoration">✦</span>
+            </div>
+
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="tech-tag">HTML / CSS / JS</span>
+                <span class="card-arrow">↗</span>
+              </div>
+
+              <h3>User Registration Form</h3>
+
+              <p>
+                Validate user inputs including name, email, phone number, and
+                password with JavaScript.
+              </p>
+
+              <div class="card-footer">
+                <span>Validation · Regex</span>
+                <span class="view-link">Explore Project →</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- 04 Controlled Form -->
+          <a
+            href="./Assignment%204/"
+            class="assignment-card"
+            data-category="React"
+          >
+            <div class="card-visual visual-purple">
+              <span class="card-number">04 / 06</span>
+
+              <div class="react-art">
+                <div class="react-symbol">⚛</div>
+                <div class="react-lines">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <div class="react-live">● LIVE STATE</div>
+              </div>
+
+              <span class="visual-decoration">{ }</span>
+            </div>
+
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="tech-tag react-tag">REACT</span>
+                <span class="card-arrow">↗</span>
+              </div>
+
+              <h3>Controlled Form</h3>
+
+              <p>
+                Capture and display user input in real-time using React state
+                and controlled components.
+              </p>
+
+              <div class="card-footer">
+                <span>useState · Forms</span>
+                <span class="view-link">Explore Project →</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- 05 Counter -->
+          <a
+            href="./Assignment%205/"
+            class="assignment-card"
+            data-category="React"
+          >
+            <div class="card-visual visual-pink">
+              <span class="card-number">05 / 06</span>
+
+              <div class="counter-art">
+                <div class="counter-box minus">−</div>
+                <div class="counter-value">08</div>
+                <div class="counter-box plus">+</div>
+              </div>
+
+              <span class="visual-decoration">01</span>
+            </div>
+
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="tech-tag react-tag">REACT</span>
+                <span class="card-arrow">↗</span>
+              </div>
+
+              <h3>React Counter App</h3>
+
+              <p>
+                Build an interactive counter with increment, decrement, and
+                reset operations using Hooks.
+              </p>
+
+              <div class="card-footer">
+                <span>useState · Events</span>
+                <span class="view-link">Explore Project →</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- 06 Profile -->
+          <a
+            href="./Assignment%206/"
+            class="assignment-card"
+            data-category="React"
+          >
+            <div class="card-visual visual-cyan">
+              <span class="card-number">06 / 06</span>
+
+              <div class="profile-art">
+                <div class="profile-avatar">👨🏻‍💻</div>
+                <div class="profile-lines">
+                  <span class="profile-name"></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <div class="profile-badge">PRO</div>
+              </div>
+
+              <span class="visual-decoration">✧</span>
+            </div>
+
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="tech-tag react-tag">REACT</span>
+                <span class="card-arrow">↗</span>
+              </div>
+
+              <h3>User Profile Card</h3>
+
+              <p>
+                Create reusable profile components and pass user information
+                through React props.
+              </p>
+
+              <div class="card-footer">
+                <span>Components · Props</span>
+                <span class="view-link">Explore Project →</span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div id="noResults" class="no-results">
+          <div class="empty-icon">⌕</div>
+          <h3>No assignments found</h3>
+          <p>Try another search term or category.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <a href="#" class="logo footer-logo">
+          <span class="logo-icon">A</span>
+          <span>Assignment<span class="logo-highlight">Hub</span></span>
+        </a>
+
+        <p>Designed with curiosity. Built through practice.</p>
+
+        <span class="footer-year">© 2026</span>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
